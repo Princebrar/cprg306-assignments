@@ -1,4 +1,4 @@
-import StudentInfo from "./student-info";
+import StudentInfo from "../../Components/student-info";
 export default function Page() {
     return (
       <main>
