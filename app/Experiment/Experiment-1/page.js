@@ -1,21 +1,18 @@
-"use client"
-console.log("Jatt life");
+import ItemList from "./item-list";
+import Item from "./item";
+
 export default function Page() {
     return (
-      <main className=" min-h-screen">
-        <h1>Experiment-1</h1>
-        <h1>Farm items</h1>
-        <p>Here are some items you can find on a farm:</p>
-        <ol type='A'>
-            <li>{Farmitems.name} whose age is {Farmitems.age} and its colour is {Farmitems.color} and its address is {Farmitems.address.no} {Farmitems.address.street} {Farmitems.address.city}</li>
-        </ol>
+      <main className=" bg-slate-950 text-white flex flex-col">
+        <div>
+        <h2 className="text-3xl font-bold m-2">Shopping List</h2>
+        <ul>
+        {ItemList.map((jatt) => (
+        // eslint-disable-next-line react/jsx-key
+        <Item name={jatt.name} quantity={jatt.quantity} category={jatt.category} />
+      ))}
+        </ul>
+        </div>
       </main>
     );
   }
-
-  const Farmitems = {
-    name : "Tractor",
-    age:1,
-    color:"red",
-    address:{no:5,street:"main street",city:"New York"},
-  };
