@@ -71,9 +71,6 @@ const ItemList= [{
         quantity: 4,
         category: "household",
       }];
-    //   return items.map((jatt, index) => (
-    //     <Item key={index} name={jatt.name} quantity={jatt.quantity} category={jatt.category} />
-    //   ));
     
 
 
