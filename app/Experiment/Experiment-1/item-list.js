@@ -1,5 +1,4 @@
 import React from 'react'; import Item from './item';
-import { exportPathMap } from '@/next.config';
 
 const ItemList= [{
         name: "milk, 4 L 🥛",
