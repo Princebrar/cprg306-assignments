@@ -31,7 +31,7 @@ export default function ItemList(){
           <>
           {item.category == items[wow].category ? "" : <h2 className="text-xl">{item.category.charAt(0).toUpperCase() + item.category.slice(1)}</h2>}
           <span className="hidden">{wow = index}</span>
-          <Item key={index-1} name={item.name} quantity={item.quantity} category={item.category} /></>
+          <Item key={index} name={item.name} quantity={item.quantity} category={item.category} /></>
         ))}
         </>
       </ul>

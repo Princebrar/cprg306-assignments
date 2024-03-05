@@ -1,10 +1,10 @@
 import ".././globals.css";
 import { Inter } from "next/font/google";
 
-const inter = Inter({ subsets: ["latin"] });
+const inter = Inter({ subsets: ["latin"]},["bg-slate-950"]);
 
 export const metadata = {
-  title: "Week 3 - Shopping List App",
+  title: "Week 6 - Shopping List App",
 };
 
 export default function RootLayout({ children }) {
